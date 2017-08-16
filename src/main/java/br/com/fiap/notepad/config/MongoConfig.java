@@ -43,6 +43,6 @@ public class MongoConfig extends AbstractMongoConfiguration {
 
     @Override
     protected String getMappingBasePackage() {
-        return "br.com.heiderlopes.JavaComMongo";
+        return "br.com.fiap.notepad";
     }
 }

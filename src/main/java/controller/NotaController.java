@@ -29,4 +29,7 @@ public class NotaController {
 	public void save(@RequestBody Nota nota){
 		notaRepository.save(nota);
 	}
+	
+	@GetMapping(value="/titulo/{titulo}")
+	public List<Nota> findByTitulo(@PathVariable(value="titulo") String g){return notaRepository.findByTitulo(g);}
 }
